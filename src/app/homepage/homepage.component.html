@@ -1,0 +1,13 @@
+<md-sidenav-container style="height:500px;">
+  <md-sidenav mode="side" opened="true" class="sidenav">
+    <md-nav-list>
+      <md-select placeholder="Nodetypes">
+        <md-option *ngFor="let i of nodetypes">{{i.nodeTypeName}}</md-option>
+      </md-select>
+    </md-nav-list>
+  </md-sidenav>
+  <p-fileUpload name="file" url="http://localhost:8182/nodetype/files" multiple="multiple"
+                (onUpload)="onUpload($event)"></p-fileUpload>
+  <div class="mat-sidenav-content"></div>
+</md-sidenav-container>
+
