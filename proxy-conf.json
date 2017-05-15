@@ -1,0 +1,6 @@
+{
+  "/nodetypes": {
+    "target": "http://localhost:8182",
+    "secure": false
+  }
+}
